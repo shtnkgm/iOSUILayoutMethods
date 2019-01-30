@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		97A5FDC82201DE210029F621 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A5FDC72201DE210029F621 /* AppDelegate.swift */; };
-		97A5FDCA2201DE210029F621 /* StoryBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A5FDC92201DE210029F621 /* StoryBoardViewController.swift */; };
-		97A5FDCD2201DE210029F621 /* StoryBoardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A5FDCB2201DE210029F621 /* StoryBoardViewController.storyboard */; };
+		97A5FDCA2201DE210029F621 /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A5FDC92201DE210029F621 /* StoryboardViewController.swift */; };
 		97A5FDCF2201DE220029F621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A5FDCE2201DE220029F621 /* Assets.xcassets */; };
 		97A5FDD22201DE220029F621 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A5FDD02201DE220029F621 /* LaunchScreen.storyboard */; };
+		97A5FDDD2201E5630029F621 /* XIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A5FDDB2201E5630029F621 /* XIBViewController.swift */; };
+		97A5FDDE2201E5630029F621 /* XIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A5FDDC2201E5630029F621 /* XIBViewController.xib */; };
+		97A5FDE12201E8C30029F621 /* StoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A5FDDF2201E8C30029F621 /* StoryboardViewController.storyboard */; };
 		D25595078FC2AF5A9D80F717 /* Pods_iOSUILayoutMethods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623DA0BBFA95C71860856181 /* Pods_iOSUILayoutMethods.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +22,13 @@
 		623DA0BBFA95C71860856181 /* Pods_iOSUILayoutMethods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSUILayoutMethods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A5FDC42201DE210029F621 /* iOSUILayoutMethods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSUILayoutMethods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A5FDC72201DE210029F621 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97A5FDC92201DE210029F621 /* StoryBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardViewController.swift; sourceTree = "<group>"; };
-		97A5FDCC2201DE210029F621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StoryBoardViewController.storyboard; sourceTree = "<group>"; };
+		97A5FDC92201DE210029F621 /* StoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
 		97A5FDCE2201DE220029F621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97A5FDD12201DE220029F621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97A5FDD32201DE220029F621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A5FDDB2201E5630029F621 /* XIBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBViewController.swift; sourceTree = "<group>"; };
+		97A5FDDC2201E5630029F621 /* XIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBViewController.xib; sourceTree = "<group>"; };
+		97A5FDE02201E8C30029F621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StoryboardViewController.storyboard; sourceTree = "<group>"; };
 		C95CE605C0ECCFEE3127831A /* Pods-iOSUILayoutMethods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSUILayoutMethods.release.xcconfig"; path = "Target Support Files/Pods-iOSUILayoutMethods/Pods-iOSUILayoutMethods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,8 +74,10 @@
 			isa = PBXGroup;
 			children = (
 				97A5FDC72201DE210029F621 /* AppDelegate.swift */,
-				97A5FDC92201DE210029F621 /* StoryBoardViewController.swift */,
-				97A5FDCB2201DE210029F621 /* StoryBoardViewController.storyboard */,
+				97A5FDC92201DE210029F621 /* StoryboardViewController.swift */,
+				97A5FDDF2201E8C30029F621 /* StoryboardViewController.storyboard */,
+				97A5FDDB2201E5630029F621 /* XIBViewController.swift */,
+				97A5FDDC2201E5630029F621 /* XIBViewController.xib */,
 				97A5FDCE2201DE220029F621 /* Assets.xcassets */,
 				97A5FDD02201DE220029F621 /* LaunchScreen.storyboard */,
 				97A5FDD32201DE220029F621 /* Info.plist */,
@@ -148,9 +154,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97A5FDDE2201E5630029F621 /* XIBViewController.xib in Resources */,
 				97A5FDD22201DE220029F621 /* LaunchScreen.storyboard in Resources */,
+				97A5FDE12201E8C30029F621 /* StoryboardViewController.storyboard in Resources */,
 				97A5FDCF2201DE220029F621 /* Assets.xcassets in Resources */,
-				97A5FDCD2201DE210029F621 /* StoryBoardViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97A5FDCA2201DE210029F621 /* StoryBoardViewController.swift in Sources */,
+				97A5FDDD2201E5630029F621 /* XIBViewController.swift in Sources */,
+				97A5FDCA2201DE210029F621 /* StoryboardViewController.swift in Sources */,
 				97A5FDC82201DE210029F621 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,20 +228,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		97A5FDCB2201DE210029F621 /* StoryBoardViewController.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				97A5FDCC2201DE210029F621 /* Base */,
-			);
-			name = StoryBoardViewController.storyboard;
-			sourceTree = "<group>";
-		};
 		97A5FDD02201DE220029F621 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				97A5FDD12201DE220029F621 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		97A5FDDF2201E8C30029F621 /* StoryboardViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97A5FDE02201E8C30029F621 /* Base */,
+			);
+			name = StoryboardViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
