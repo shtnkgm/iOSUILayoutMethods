@@ -1,0 +1,24 @@
+PODS:
+  - PureLayout (3.1.4)
+  - SnapKit (4.2.0)
+  - Then (2.4.0)
+
+DEPENDENCIES:
+  - PureLayout
+  - SnapKit
+  - Then
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PureLayout
+    - SnapKit
+    - Then
+
+SPEC CHECKSUMS:
+  PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
+
+PODFILE CHECKSUM: c94cc0230fa6cbf7c14ca89e079c24315b6d3a7c
+
+COCOAPODS: 1.6.0.beta.2
