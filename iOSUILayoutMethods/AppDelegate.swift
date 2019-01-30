@@ -21,7 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let xibViewController = XIBViewController()
         xibViewController.tabBarItem = UITabBarItem(title: "XIB", image: UIImage(named: "star"), tag: 0)
         
-        let viewControllers = [storyboardViewController, xibViewController].compactMap { $0 }
+        let layoutAnchorViewController = LayoutAnchorViewController()
+        layoutAnchorViewController.tabBarItem = UITabBarItem(title: "LayoutAnchor", image: UIImage(named: "star"), tag: 0)
+        
+        let viewControllers = [storyboardViewController, xibViewController, layoutAnchorViewController].compactMap { $0 }
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers(viewControllers, animated: false)
         
