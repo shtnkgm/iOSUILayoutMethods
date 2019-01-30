@@ -15,6 +15,8 @@
 		97A5FDDE2201E5630029F621 /* XIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A5FDDC2201E5630029F621 /* XIBViewController.xib */; };
 		97A5FDE12201E8C30029F621 /* StoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A5FDDF2201E8C30029F621 /* StoryboardViewController.storyboard */; };
 		97A5FDE32201EADF0029F621 /* LayoutAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A5FDE22201EADF0029F621 /* LayoutAnchorViewController.swift */; };
+		97A5FDE52201EF3E0029F621 /* PureLaoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A5FDE42201EF3E0029F621 /* PureLaoutViewController.swift */; };
+		97A5FDE72201EFFE0029F621 /* SnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A5FDE62201EFFE0029F621 /* SnapKitViewController.swift */; };
 		D25595078FC2AF5A9D80F717 /* Pods_iOSUILayoutMethods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623DA0BBFA95C71860856181 /* Pods_iOSUILayoutMethods.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		97A5FDDC2201E5630029F621 /* XIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBViewController.xib; sourceTree = "<group>"; };
 		97A5FDE02201E8C30029F621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StoryboardViewController.storyboard; sourceTree = "<group>"; };
 		97A5FDE22201EADF0029F621 /* LayoutAnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAnchorViewController.swift; sourceTree = "<group>"; };
+		97A5FDE42201EF3E0029F621 /* PureLaoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureLaoutViewController.swift; sourceTree = "<group>"; };
+		97A5FDE62201EFFE0029F621 /* SnapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitViewController.swift; sourceTree = "<group>"; };
 		C95CE605C0ECCFEE3127831A /* Pods-iOSUILayoutMethods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSUILayoutMethods.release.xcconfig"; path = "Target Support Files/Pods-iOSUILayoutMethods/Pods-iOSUILayoutMethods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,8 @@
 				97A5FDDB2201E5630029F621 /* XIBViewController.swift */,
 				97A5FDDC2201E5630029F621 /* XIBViewController.xib */,
 				97A5FDE22201EADF0029F621 /* LayoutAnchorViewController.swift */,
+				97A5FDE42201EF3E0029F621 /* PureLaoutViewController.swift */,
+				97A5FDE62201EFFE0029F621 /* SnapKitViewController.swift */,
 				97A5FDCE2201DE220029F621 /* Assets.xcassets */,
 				97A5FDD02201DE220029F621 /* LaunchScreen.storyboard */,
 				97A5FDD32201DE220029F621 /* Info.plist */,
@@ -222,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97A5FDE52201EF3E0029F621 /* PureLaoutViewController.swift in Sources */,
 				97A5FDDD2201E5630029F621 /* XIBViewController.swift in Sources */,
 				97A5FDCA2201DE210029F621 /* StoryboardViewController.swift in Sources */,
+				97A5FDE72201EFFE0029F621 /* SnapKitViewController.swift in Sources */,
 				97A5FDE32201EADF0029F621 /* LayoutAnchorViewController.swift in Sources */,
 				97A5FDC82201DE210029F621 /* AppDelegate.swift in Sources */,
 			);

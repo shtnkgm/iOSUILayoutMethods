@@ -1,5 +1,5 @@
 //
-//  LayoutAnchorViewController.swift
+//  PureLaoutViewController.swift
 //  iOSUILayoutMethods
 //
 //  Created by Shota Nakagami on 2019/01/30.
@@ -8,8 +8,9 @@
 
 import UIKit
 import Then
+import PureLayout
 
-class LayoutAnchorViewController: UIViewController {
+class PureLaoutViewController: UIViewController {
     let stackView = UIStackView().then {
         $0.axis = .vertical
         $0.distribution = .fillEqually
@@ -47,12 +48,9 @@ class LayoutAnchorViewController: UIViewController {
     
     private func setUpLayout() {
         view.addSubview(stackView)
-        stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
-        stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
-        
+        stackView.autoPinEdgesToSuperviewSafeArea(with: UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20))
         stackView.addArrangedSubview(imageView)
         stackView.addArrangedSubview(textView)
     }
 }
+

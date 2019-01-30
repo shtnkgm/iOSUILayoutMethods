@@ -24,7 +24,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let layoutAnchorViewController = LayoutAnchorViewController()
         layoutAnchorViewController.tabBarItem = UITabBarItem(title: "LayoutAnchor", image: UIImage(named: "star"), tag: 0)
         
-        let viewControllers = [storyboardViewController, xibViewController, layoutAnchorViewController].compactMap { $0 }
+        let pureLaoutViewController = PureLaoutViewController()
+        pureLaoutViewController.tabBarItem = UITabBarItem(title: "PureLaout", image: UIImage(named: "star"), tag: 0)
+        
+        let snapKitViewController = SnapKitViewController()
+        snapKitViewController.tabBarItem = UITabBarItem(title: "SnapKit", image: UIImage(named: "star"), tag: 0)
+        
+        let viewControllers = [
+            storyboardViewController,
+            xibViewController,
+            layoutAnchorViewController,
+            pureLaoutViewController,
+            snapKitViewController
+            ].compactMap { $0 }
+        
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers(viewControllers, animated: false)
         
