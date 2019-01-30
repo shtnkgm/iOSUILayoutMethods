@@ -19,13 +19,11 @@ class LayoutAnchorViewController: UIViewController {
     }
     
     private let imageView = UIImageView().then {
-        $0.image = UIImage(named: "image03")
         $0.contentMode = .scaleAspectFit
         $0.backgroundColor = UIColor.black.withAlphaComponent(0.1)
     }
     
     private let textView = UITextView().then {
-        $0.text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         $0.textColor = .blue
         $0.backgroundColor = .clear
         $0.font = .systemFont(ofSize: 20)
