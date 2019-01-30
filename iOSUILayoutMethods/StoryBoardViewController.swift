@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StoryBoardViewController.swift
 //  iOSUILayoutMethods
 //
 //  Created by Shota Nakagami on 2019/01/30.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StoryBoardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-
 }
 
