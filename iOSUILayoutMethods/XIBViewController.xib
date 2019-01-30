@@ -23,7 +23,7 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4qt-Nw-aUu">
                     <rect key="frame" x="20" y="40" width="335" height="607"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image01" translatesAutoresizingMaskIntoConstraints="NO" id="4El-yA-Ilc">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image02" translatesAutoresizingMaskIntoConstraints="NO" id="4El-yA-Ilc">
                             <rect key="frame" x="0.0" y="0.0" width="335" height="303.5"/>
                             <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </imageView>
@@ -50,6 +50,6 @@
         </view>
     </objects>
     <resources>
-        <image name="image01" width="3000" height="2228"/>
+        <image name="image02" width="5760" height="3840"/>
     </resources>
 </document>

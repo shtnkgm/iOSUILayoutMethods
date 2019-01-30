@@ -19,24 +19,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboardViewController = storyboard.instantiateInitialViewController()
         
         let xibViewController = XIBViewController()
-        xibViewController.tabBarItem = UITabBarItem(title: "XIB", image: UIImage(named: "star"), tag: 0)
+        xibViewController.title = "XIB"
         
-        let layoutAnchorViewController = LayoutAnchorViewController()
-        layoutAnchorViewController.tabBarItem = UITabBarItem(title: "LayoutAnchor", image: UIImage(named: "star"), tag: 0)
+        let text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         
-        let pureLaoutViewController = PureLaoutViewController()
-        pureLaoutViewController.tabBarItem = UITabBarItem(title: "PureLaout", image: UIImage(named: "star"), tag: 0)
+        let layoutAnchorViewController = LayoutAnchorViewController(image: UIImage(named: "image03"), text: text)
+        layoutAnchorViewController.title = "LayoutAnchor"
         
-        let snapKitViewController = SnapKitViewController()
-        snapKitViewController.tabBarItem = UITabBarItem(title: "SnapKit", image: UIImage(named: "star"), tag: 0)
+        let pureLaoutViewController = PureLaoutViewController(image: UIImage(named: "image04"), text: text)
+        pureLaoutViewController.title = "PureLaout"
         
-        let viewControllers = [
+        let snapKitViewController = SnapKitViewController(image: UIImage(named: "image05"), text: text)
+        snapKitViewController.title = "SnapKit"
+        
+        let viewControllers: [UIViewController] = [
             storyboardViewController,
             xibViewController,
             layoutAnchorViewController,
             pureLaoutViewController,
             snapKitViewController
             ].compactMap { $0 }
+            .map {
+                $0.tabBarItem = UITabBarItem(title: $0.title, image: UIImage(named: "star"), tag: 0)
+                let navigationController = UINavigationController(rootViewController: $0)
+                return navigationController
+        }
         
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers(viewControllers, animated: false)
